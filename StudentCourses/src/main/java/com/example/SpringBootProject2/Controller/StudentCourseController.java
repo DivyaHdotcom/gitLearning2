@@ -35,7 +35,7 @@ public class StudentCourseController {
     public List<Courses> findAllCourses(){
         return service.findAllCourses();
     }
-    @GetMapping("/{s_id}")
+    @GetMapping("/{student_id}")
     public Student findStudent(@PathVariable int id){
         return service.findStudent(id);
     }
